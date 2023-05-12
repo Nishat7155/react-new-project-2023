@@ -51,31 +51,23 @@ export const TextWrapper  = styled.span`
 
 font-size: ${({ size }) => (size? size: '')}; 
 font-weight: ${({ weight }) => (weight? weight: '')};
-
 letter-spacing: ${({ space }) => (space? space: '')}; 
 text-align: ${({ align }) => (align ? align: '')};
-
 padding: ${({ padding }) => (padding? padding: '')}; 
 margin: ${({ margin }) => (margin ? margin:'')};
-
 margin-bottom: ${({ mb }) => (mb ? mb: '')};
-
 margin-top: ${({ mt }) => (mt? mt : '')};
-
 width: ${({ width }) => (width? width: 'auto')};
-
 min-width: ${({ minwidth }) => (minwidth? minwidth: '')};
-
 max-width: ${({ maxwidth }) => (maxwidth? maxwidth: '')}; 
 height: ${({ height }) => (height? height: '')};
-
 max-height: ${({ maxHeight }) => (maxHeight? maxHeight: '')}; 
 min-Height: ${({ minHeight }) => (minHeight? minHeight: '')};
-
 color: ${({ color }) => (color? color: '')};
+
 `;
 export const Section = styled.section`
-padding: ${({padding} ) } => (padding ? padding : '140px 0')); 
+padding: ${({padding} )  => (padding ? padding : '140px 0')}; 
 margin: ${({ margin }) => (margin ? margin : '')};
 background: ${({ inverse }) => (inverse ? '#101522' : 'white')}; 
 color: ${({inverse }) =>(inverse ? 'white' : 'black')}; 
@@ -99,15 +91,15 @@ export const Row = styled.div`
  padding: ${({ padding }) => (padding ? padding : '')}; 
  margin: ${({ margin }) => (margin ? margin : '')}; 
  margin-bottom: ${({ mb }) => (mb ? mb : '')}; 
- margin-top: ${({ mt }) => (mit ? mt : '')}; 
+ margin-top: ${({ mit }) => (mit ? mit : '')}; 
  position: ${({ position }) => (position ? position : '')};
  width: ${({ width }) => (width ? width : '100%')};
  min-width: ${({ minwidth }) => (minwidth ? minwidth : '')}; 
  max-width: ${({ maxwidth }) => (maxwidth ? maxwidth : '')};
  max-width: ${({ maxwidth }) => (maxwidth ? maxwidth : '')}; 
  height: ${({ height }) => (height ? height : '')};
- max-height: ${({ maxHeight }) => (maxHeight ? maxheight : '')}; 
- min-height: ${({ minheight }) => (minheight ? minHeight : '')}; 
+ max-height: ${({ maxHeight }) => (maxHeight ? maxHeight : '')}; 
+ min-height: ${({ minHeight }) => (minHeight ? minHeight : '')}; 
  flex-wrap: ${({ wrap }) => (wrap ? wrap : '')};
  color: ${({ color }) => (color ? color : '')};
  text-align: ${({ textAlign }) => (textAlign ? textAlign : '')};
