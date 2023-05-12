@@ -96,7 +96,7 @@ export const Row = styled.div`
  justify-content: ${({justify}  ) => (justify ? justify : '')};
  align-items: ${({ align }) => (align ? align : '')};
  gap: ${({ gap }) => (gap ? gap : '')};
- padding: ${( padding }) => (padding ? padding : "); 
+ padding: ${({ padding }) => (padding ? padding : '')}; 
  margin: ${({ margin }) => (margin ? margin : '')}; 
  margin-bottom: ${({ mb }) => (mb ? mb : '')}; 
  margin-top: ${({ mt }) => (mit ? mt : '')}; 
@@ -144,12 +144,15 @@ export const Button = styled(motion.button)`
  border: none;
  cursor: pointer;
 
- &: hover {
+ &:hover {
   transition: all 0.3s ease-out;
-  /* background: #fff;*/
+  /* background: #fff; */
   color: black;
   background-color: #ebc214;
  }
- `;
+`;
+
+
+
 
  export default GlobalStyle;
